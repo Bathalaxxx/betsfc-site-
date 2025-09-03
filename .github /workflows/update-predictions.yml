@@ -32,3 +32,8 @@ jobs:
         git add .
         git diff --quiet && git diff --staged --quiet || git commit -m "Update predictions - $(date +'%Y-%m-%d')"
         git push
+
+    - name: Debug - Check secret (remove after testing)
+    run: |
+      echo "Secret length: ${#PREDICTION_DATA}"
+      echo "First 100 chars: ${PREDICTION_DATA:0:100}"
