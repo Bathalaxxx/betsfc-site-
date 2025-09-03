@@ -34,6 +34,6 @@ jobs:
         git push
 
     - name: Debug - Check secret (remove after testing)
-    run: |
-      echo "Secret length: ${#PREDICTION_DATA}"
-      echo "First 100 chars: ${PREDICTION_DATA:0:100}"
+      run: |
+        echo "Secret length: ${#PREDICTION_DATA}"
+        echo "First 100 chars: ${PREDICTION_DATA:0:100}"
