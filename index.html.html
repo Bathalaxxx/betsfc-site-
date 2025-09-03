@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetsFC - Daily Football Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BetsFC Football Predictions</h1>
+            <p>Daily expert predictions for football matches worldwide</p>
+            <p class="last-updated">Last updated: <span id="last-updated-date">Loading...</span></p>
+        </header>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="current">Current Predictions</div>
+            <div class="tab" data-tab="previous">Previous Results</div>
+        </div>
+        
+        <div class="tab-content active" id="current-predictions">
+            <div id="current-predictions-container">
+                <p>Loading current predictions...</p>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="previous-results">
+            <div class="date-filter">
+                <select id="date-filter">
+                    <option value="">Select date</option>
+                </select>
+            </div>
+            <div id="previous-results-container">
+                <p>Select a date to view previous predictions</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Disclaimer: Predictions are for informational purposes only. Please gamble responsibly.</p>
+            <p>© 2025 BetsFC. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
